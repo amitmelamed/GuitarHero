@@ -20,7 +20,7 @@ public class Mover : MonoBehaviour
     void Update()
     {
         transform.position += velocity * Time.deltaTime;
-        time +=Time .deltaTime;
+        time += Time.deltaTime;
         if (time > timeToDestroy && destroyAfterTime)
         {
             Destroy(gameObject);
