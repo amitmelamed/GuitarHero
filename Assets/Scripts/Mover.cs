@@ -14,15 +14,14 @@ public class Mover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position += velocity * Time.deltaTime;
-        time+=Time.deltaTime;
-        if (time > timeToDestroy && destroyAfterTime) 
+        time +=Time .deltaTime;
+        if (time > timeToDestroy && destroyAfterTime)
         {
             Destroy(gameObject);
         }
